@@ -1,0 +1,50 @@
+{
+  "name": "egg_sentry",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "egg": "^3.11.0",
+    "egg-cors": "^2.2.3",
+    "egg-jwt": "^3.1.7",
+    "egg-mysql": "^4.0.0",
+    "egg-redis": "^2.4.0",
+    "egg-scripts": "^2.5.0",
+    "egg-sequelize": "^6.0.0",
+    "egg-validate": "^1.0.0",
+    "egg-view-nunjucks": "^2.3.0",
+    "moment": "^2.19.2",
+    "mysql2": "^3.10.1",
+    "sequelize-cli": "^6.6.2"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "egg-bin": "^5.9.0",
+    "egg-mock": "^5.5.0",
+    "eslint": "^8.31.0",
+    "eslint-config-egg": "^12.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-eggTest",
+    "sequelize": "sequelize --",
+    "stop": "egg-scripts stop --title=egg-server-eggTest",
+    "dev": "egg-bin dev",
+    "test": "npm run lint -- --fix && npm run test:local",
+    "test:local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
